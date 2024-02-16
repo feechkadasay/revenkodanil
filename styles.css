@@ -21,6 +21,24 @@ header {
   text-align: center;
 }
 
+.profile-image {
+  float: right;
+  margin: 0 0 10px 10px;
+  width: auto;
+  height: 215px;
+}
+
+#biographys {
+  padding: 20px;
+}
+
+.biography {
+  background-color: #d6bc9f70;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 #languages {
   background-color: #d6bc9f70;
   padding: 20px;
