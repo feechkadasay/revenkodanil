@@ -12,7 +12,6 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         behavior: 'smooth'
       });
       
-      // Добавляем класс active к текущему пункту меню
       document.querySelectorAll('.navbar li').forEach(li => {
         li.classList.remove('active');
       });
@@ -21,7 +20,6 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
   });
 });
 
-// Добавляем класс active при скролле
 window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
   
