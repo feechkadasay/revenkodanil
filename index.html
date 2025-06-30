@@ -1,66 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Мое портфолио</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио начинающего разработчика</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="ripple-background">
-    <div class="circle xxlarge shade1"></div>
-    <div class="circle xlarge shade2"></div>
-    <div class="circle large shade3"></div>
-    <div class="circle medium shade4"></div>
-    <div class="circle small shade5"></div>
+
+
+  <!-- Навигация -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#projects">Проекты</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- Основное содержимое -->
+  <div class="container">
+    <header id="about">
+      <div class="header-content">
+        <div class="text-content">
+          <h1>Привет, я начинающий разработчик</h1>
+          <p class="subtitle">Увлекаюсь программированием и создаю интересные проекты</p>
+          <p>С детства интересуюсь компьютерами и технологиями. Сейчас активно изучаю программирование и применяю знания на практике.</p>
+          <p>Мне нравится процесс обучения и создания собственных проектов.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Секция проектов -->
+    <section id="projects" class="section">
+      <h2>Мои проекты</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="img/project1.jpg" alt="Проект Черепашка">
+          </div>
+          <div class="project-info">
+            <h3>Черепашка</h3>
+            <p>Программа на C# в Visual Studio, имитирующая черепашью графику с возможностью управления движением и цветом линий.</p>
+            <div class="tech-tags">
+              <span class="tag">C#</span>
+              <span class="tag">Visual Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="img/project2.jpg" alt="Проект Шар 8">
+          </div>
+          <div class="project-info">
+            <h3>Шар 8</h3>
+            <p>Клон известной "безделушки" Шар 8, написанный на Python с использованием случайных ответов.</p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Random</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="img/project3.jpg" alt="Проект Угадай число">
+          </div>
+          <div class="project-info">
+            <h3>Угадай число</h3>
+            <p>Игра, где программа генерирует случайное число, а пользователь пытается его угадать по подсказкам "больше/меньше".</p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Игры</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция навыков -->
+    <section id="skills" class="section">
+      <h2>Мои навыки</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-item">
+          <i class="fas fa-code"></i>
+          <h3>C#</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 60%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <h3>HTML/CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+<section id="contacts" class="section">
+  <h2>Мои контакты</h2>
+  <div class="contacts-container" style="text-align: center; margin: 30px 0;">
+    <a href="information.php" class="btn-database" 
+       style="display: inline-block; 
+              padding: 12px 30px;
+              background-color: #4a6fa5;
+              color: white;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <i class="fas fa-database" style="margin-right: 8px;"></i>
+      Показать контактные данные
+    </a>
+    <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+      Нажмите кнопку, чтобы увидеть полную контактную информацию
+    </p>
   </div>
-
-  <header>
-    <h1>Привет, меня зовут Данил Ревенко, это мой первый сайт-портфолио.</h1>
-    <p>Всю свою жизнь я увлекаюсь компьютером и всем, что с этим связано.</p>
-    <p>Всегда хотел изучать программирование и сейчас учусь на эту специальность.</p>
-    <p>Мне нравится учиться и делать свои проекты.</p>
-  </header>
-
-  <section id="biographys">
-    <h2>Биография</h2>
-    <div class="biography">
-      <img src="img/your-image.jpg" alt="Фото лица" class="profile-image">
-      <p>Мне 19 лет. Я родился в прекрасном городе Енакиево. Учился в колледже на экономиста. Сейчас я поступил в университет.</p>
-      <p>Я студент и изучаю программирование. Мой интерес к компьютерам и программированию начался ещё в детстве, и с тех пор я стараюсь развивать свои навыки в этой области.</p>
-      <p>Я учусь работать с различными языками программирования, такими как C#, Python и HTML. Мои текущие проекты включают создание небольших программ, которые помогают мне практиковаться и улучшать свои навыки.</p>
-      <p>Я стремлюсь стать профессионалом в области разработки программного обеспечения и создания веб-приложений. Мне нравится учиться новым технологиям и применять их для решения реальных задач.</p>
-    </div>  
-  </section>
-
-  <section id="projects">
-    <h2>Вот несколько из моих проектов:</h2>
-    <div class="project">
-      <h3>Проект "Черепашка"</h3>
-      <img src="img/project1.jpg" alt="Проект 1">
-      <p>Программа написанная на C# в Visual Studio. Черепашка выполняет команды рисовать с движением вперед, развороты налево и направо, а также меняет цвет линии.</p>
-    </div>
-    <div class="project">
-      <h3>Проект "Шар 8"</h3>
-      <img src="img/project2.jpg" alt="Проект 2">
-      <p>Маленькая программа, написанная на языке Python. Полностью повторяющая "безделушку" Шар 8.</p>
-    </div>
-    <div class="project">
-      <h3>Проект "Угадай число"</h3>
-      <img src="img/project3.jpg" alt="Проект 3">
-      <p>Такая же маленькая программа на Python. Игрок вписывает число, а программа говорит - "меньше" или "больше".</p>
-    </div>
-  </section>
-
-  <section id="languages">
-    <h2>Изученные языки программирования</h2>
-    <p>С нашей группой мы изучили малую часть таких языков как C#, Python, HTML.</p>
-  </section>
+</section>
 
   <footer>
-    <p>Мне нравится учиться и через время я стану специалистом</p>
-    <div class="contact-icons">
-        <p>Связь со мной:</p>
-      <a href="https://t.me/ebynpc"><img src="img/telegram-icon.png" alt="Telegram"></a>
-    </div>
+    <p>© 2025 Мое портфолио. Все права защищены.</p>
+    <p>Сайт разработан с ❤️ и желанием учиться</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
